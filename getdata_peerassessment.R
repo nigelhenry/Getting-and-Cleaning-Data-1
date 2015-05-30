@@ -1,11 +1,11 @@
 ## load the data
-dataFolder <- "./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/"
+dataFolder <- ""
 features <- read.table(paste(dataFolder, 'features.txt', sep=""), stringsAsFactors=F)
 labels <- read.table(paste(dataFolder, 'activity_labels.txt', sep=""), stringsAsFactors=F)
 
-X_train<-read.table(paste(dataFolder, 'test/X_test.txt', sep=""))
-y_train<-read.table(paste(dataFolder, 'test/y_test.txt', sep=""))
-subject_train<-read.table(paste(dataFolder, 'test/subject_test.txt', sep=""))
+X_train<-read.table(paste(dataFolder, 'train/X_train.txt', sep=""))
+y_train<-read.table(paste(dataFolder, 'train/y_train.txt', sep=""))
+subject_train<-read.table(paste(dataFolder, 'train/subject_train.txt', sep=""))
 X_test<-read.table(paste(dataFolder, 'test/X_test.txt', sep=""))
 y_test<-read.table(paste(dataFolder, 'test/y_test.txt', sep=""))
 subject_test<-read.table(paste(dataFolder, 'test/subject_test.txt', sep=""))
